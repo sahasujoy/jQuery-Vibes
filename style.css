@@ -1,0 +1,17 @@
+.style1{
+    font-size: 3rem;
+    color: brown;
+}
+
+.style2{
+    font-style: italic;
+}
+
+.div-style{
+    /* display: none; */
+    height: 280px;
+    width: 800px;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: brown;
+}
