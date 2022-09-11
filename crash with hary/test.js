@@ -101,4 +101,34 @@ $(document).ready(function () {
     e.preventDefault();
     $('#lorem').slideToggle(2000); //it acts like slide down and up both!
   });
+
+  $('#animateOpacity').on('click', function () {
+    $('#lorem').animate({opacity: 0.3}, 2000);
+    console.log('clicked');
+  });
+
+  $('#removeOpacity').on('click', function() {
+    $('#lorem').animate({opacity:1.0}, 2000);
+  })
+
+  $('#modify').on('click', function() {
+    $('#lorem').animate({
+      opacity:0.3,
+      height: '200px',
+      width: '400px',
+    }, 'fast'); // apply css in animate method :) fast/slow can be used in the time section also.
+  });
+
+  //--------------------------------------------------------------------------------------------------
+  // text(), html(), empty() : they can insert or change the text, html content respectively and empty() to clean the value.
+  //--------------------------------------------------------------------------------------------------
+
+  $('#ta').val(); //try it in console log to see the value of taxtarea;
+  $('#ta').val('yes, i am a textarea!'); //replace previous value by this!
+  $('#input').val('i am a input!'); //insert the value of input!
+
+  $('#lorem').addClass('myClass'); //add a class name
+  $('#lorem').addClass('myClass2'); //add another class name
+  $('#lorem').removeClass('myClass2'); //remove a class name
+  $('#lorem').css('background-color', 'green'); // append a background color using css() method
 });
